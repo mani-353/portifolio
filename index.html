@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veera Manikanta Nandikolla Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Veera Manikanta Nandikolla</h1>
+        <img src="images/mani.jpg" alt="Profile Picture">
+        <p>Full-Stack Developer | Web 3 Enthusiast | Blockchain | Solidity</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm <b>Veera Manikanta Nandikolla</b>, a passionate full-stack developer and computer science
+            enthusiast. I'm
+            currently pursuing a BTech degree in Computer Science Engineering (CSE) at the Rajiv Gandhi University of
+            Knowledge and Technology (IIIT) Nuzvid, Andhra Pradesh. I'm a highly enthusiastic and energetic individual
+            who works very hard. I'm passionate about Web3 development and have completed some foundational projects on
+            the Soroban Stellar blockchain and bulid some basic dapps and nft mints in Solidity. I'm constantly learning
+            about blockchain technology and always seeking new
+            knowledge. My programming skills include Python, C++, HTML, CSS, JavaScript, Node.js, React.js, MySQL, and
+            Solidity. In my free time, I enjoy reading books and expanding my knowledge base in various technological
+            fields. I can prove to be a valuable asset with my present skill set. I enjoy working with like-minded
+            people, and I am a team player.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="./images/logo.png" alt="Project 1">
+                <h3>Rgukt grade mate</h3>
+                <p>calculate your SGPA and CGPA with ease.</p>
+                <a href="#" class="open-modal" data-project="Rgukt grade mate" pid="0">Learn More</a>
+            </div>
+            <div class="project">
+                <img src="./images/appointy.jpg" alt="Project 2">
+                <h3>Appointy</h3>
+                <p>It is used to book appointments.</p>
+                <a href="#" class="open-modal" data-project="Appointy" pid="1">Learn More</a>
+            </div>
+            <div class="project">
+                <img src="./images/crop.jpg" alt="Project 3">
+                <h3>crop disease identification</h3>
+                <p>It detects the disease of crop.</p>
+                <a href="#" class="open-modal" data-project="Crop disease identification" pid="2">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <h3>HTML</h3>
+            <p>Proficient in creating structured and semantic HTML documents.</p>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <p>Experienced in styling websites with CSS, including Flexbox and Grid layouts.</p>
+        </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <p>Skilled in building dynamic and interactive web applications using vanilla JavaScript and frameworks like
+                React.</p>
+        </div>
+        <div class="skill">
+            <h3>React.js</h3>
+            <p>Experienced in developing complex and efficient user interfaces using React.js, with a strong
+                understanding of hooks and state management.</p>
+        </div>
+        <div class="skill">
+            <h3>SQL and Databases</h3>
+            <p>Skilled in designing, querying, and managing relational databases using SQL. Proficient in working with
+                database management systems like MySQL and PostgreSQL.</p>
+        </div>
+        <div class="skill">
+            <h3>PHP</h3>
+            <p>Experienced in server-side scripting with PHP for developing dynamic web applications and managing
+                backend functionalities.</p>
+        </div>
+        <div class="skill">
+            <h3>Python</h3>
+            <p>Experienced in Python programming for web development, data analysis, and automation tasks.</p>
+        </div>
+        <div class="skill">
+            <h3>Solidity</h3>
+            <p>Proficient in writing smart contracts using Solidity for blockchain applications on platforms like
+                Ethereum.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/veera-manikanta-nandikolla-0b0ba0255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target='_blank'>
+                <img src="https://img.icons8.com/ios-filled/30/FFFFFF/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://x.com/Nandikolla65209?t=_lAS86KUbpiLtjBKJghdkw&s=09" target='_blank'>
+                <img src="https://img.icons8.com/ios-filled/30/FFFFFF/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/mani_kanta353?igsh=Zmhpbnk3M2d3Ymk2" target='_blank'>
+                <img src="https://img.icons8.com/ios-filled/30/FFFFFF/instagram-new.png" alt="Instagram">
+            </a>
+            <a href="https://github.com/mani-353" target='_blank'>
+                <img src="https://img.icons8.com/ios-filled/30/FFFFFF/github.png" alt="GitHub">
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=9063374811" target='_blank'>
+                <img src="https://img.icons8.com/ios-filled/30/FFFFFF/whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Project Details</h2>
+            <p id="project-details">Details about the selected project will appear here.</p>
+            <p id="project"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

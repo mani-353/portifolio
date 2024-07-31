@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+#projects img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+header {
+    background-image: url("images/pic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    overflow: auto;
+    color: white;
+    text-align: center;
+    padding: 9.5em 0;
+    animation: glow 1.5s linear infinite alternate;
+}
+
+header img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 1em;
+}
+
+nav {
+    top: 0px;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    background: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    padding: 1em;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: #575757;
+}
+
+section {
+    padding: 8em;
+    background: white;
+    margin: 1em auto;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    color: #e52e71;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project,
+.skill {
+    border: 1px solid #1a1919;
+    padding: 1em;
+    margin: 1em 0;
+    transition: transform 0.2s;
+}
+
+.project:hover,
+.skill:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    animation: modalopen 0.5s;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@keyframes modalopen {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ef62a8, 0 0 40px #d2649b, 0 0 50px #f491c3, 0 0 60px #f074b2, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ac5e85, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #d373a0, 0 0 70px #ef8bbd, 0 0 80px #e42886;
+    }
+}
+
+section h2:hover {
+    animation: glow 1s linear infinite alternate;
+}
+
+@media screen and (max-width: 768px) {
+
+    .project,
+    .skill {
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+#contact {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+
+}
+
+#skills,
+#projects,
+#about {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
