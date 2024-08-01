@@ -68,7 +68,8 @@ nav ul li a:hover {
 }
 
 section {
-    padding: 8em;
+    padding: 2em;
+    text-align: justify;
     background: white;
     margin: 1em auto;
     max-width: 1200px;
@@ -92,6 +93,7 @@ section h2 {
     padding: 1em;
     margin: 1em 0;
     transition: transform 0.2s;
+    box-sizing: border-box;
 }
 
 .project:hover,
@@ -140,7 +142,6 @@ section h2 {
     cursor: pointer;
 }
 
-
 @keyframes modalopen {
     from {
         opacity: 0
@@ -166,10 +167,16 @@ section h2:hover {
 }
 
 @media screen and (max-width: 768px) {
+    section {
+        padding: 1em;
+        margin: 0.5em auto;
+    }
 
     .project,
     .skill {
         width: 100%;
+        margin: 0.5em 0;
+        padding: 0.5em;
     }
 
     .modal-content {
@@ -188,7 +195,7 @@ section h2:hover {
     text-decoration: none;
 }
 
-.social-links img {
+social-links img {
     width: 30px;
     height: 30px;
     transition: transform 0.2s;
@@ -200,7 +207,6 @@ section h2:hover {
 
 #contact {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
-
 }
 
 #skills,
